@@ -13,7 +13,7 @@ const schoolIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-const SCHOOL_POSITION = [32.4740, 34.9818];
+const SCHOOL_POSITION: [number, number] = [32.4740, 34.9818];
 
 export default function Map() {
   // Fix for default icon issues in Leaflet + React
