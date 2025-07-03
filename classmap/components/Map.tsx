@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
+import L, { LatLngTuple } from 'leaflet';
 import { useEffect } from 'react';
 
 // Unique icon for the school
@@ -13,7 +13,7 @@ const schoolIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-const SCHOOL_POSITION: [number, number] = [32.4740, 34.9818];
+const SCHOOL_POSITION: LatLngTuple = [32.4740, 34.9818];
 
 export default function Map() {
   // Fix for default icon issues in Leaflet + React
